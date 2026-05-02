@@ -2,12 +2,12 @@
 
 GDAgent is an AI development environment for Godot. It brings terminal-based coding agents directly into the editor, so you can work with your project context without bouncing between Godot, browser tabs, and external terminals.
 
-It is built around a native terminal workflow inside Godot: persistent sessions, multi-agent layouts, fast setup, and tools that stay attached to the project you are actually working on.
+It is built around a native terminal workflow inside Godot: workspace restore, multi-agent layouts, fast setup, and tools that stay attached to the project you are actually working on.
 
 ## Highlights
 
 - Native terminal workspace inside Godot
-- Persistent sessions across editor restarts
+- Workspace restore across editor restarts
 - Split and multi-agent layouts
 - First-run setup that detects supported AI CLIs
 - Prompt templates for common Godot tasks
