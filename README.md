@@ -18,7 +18,7 @@ It is built around a native terminal workflow inside Godot: workspace restore, m
 GDAgent works with:
 
 - Claude Code
-- Google Gemini CLI
+- Google Antigravity CLI
 - Aider
 - GitHub Copilot CLI
 - Mistral Vibe
@@ -44,8 +44,23 @@ Install flow:
 - GDAgent runs locally on your machine.
 - You bring your own API keys or subscriptions for the AI tools you use.
 
+## Release Verification (Linux)
+
+We sign all our Linux releases with a GPG key. If you want to manually verify the integrity of the downloaded archive before installing:
+
+1. Import our official GPG public key from the Ubuntu keyserver:
+   ```bash
+   gpg --keyserver keyserver.ubuntu.com --recv-keys <INSERT_YOUR_KEY_ID_HERE>
+   ```
+2. Download both the release archive (e.g., `gdagent-v1.0.0-linux.tar.gz`) and the signature file (`gdagent-v1.0.0-linux.tar.gz.asc`) into the same folder.
+3. Verify the signature:
+   ```bash
+   gpg --verify gdagent-v1.0.0-linux.tar.gz.asc gdagent-v1.0.0-linux.tar.gz
+   ```
+   *You should see a message indicating a "Good signature" from the GDAgent Team.*
+
 ## Links
 
-- Website: <https://gdagent.github.io>
-- Docs: <https://gdagent.github.io/docs>
-- Issues: <https://github.com/gdagent/gdagent/issues>
+- Website: <https://gdagent.dev>
+- Docs: <https://gdagent.dev/docs>
+- Issues: <https://github.com/GDAgent/GDAgent/issues>
